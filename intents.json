@@ -1,0 +1,79 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello", "Good to see you", "Hi again"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "maybe not today", "no thanks"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": ["  "],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand you"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["If you go to Documentation section, you can find several methods for using Scramjet cloud platform services, i advice you to start with Get-Started section."],
+         "context": ["help"]
+        },
+        {"tag": "scramjet",
+         "patterns": ["what is scramjet?", "how scramjet works?", "can scramjet help me", "does scramjet have a cloud platform" ],
+         "responses": ["Scramjet is a Cloud Platform provider, additional information is found on the Web-Site Introduction Section"],
+         "context": [""]
+        },
+        {"tag": "cli",
+         "patterns": ["where can i find information on cli installation", "cli installation", "does scramjet has a cli?" ],
+         "responses": ["CLI section is located under SCP CLI section for more information on how to install CLI through terminal", "you can also install CLI through the following command-line npm install -g @scramjet/cli" ],
+         "context": [""]
+        },
+        {"tag": "get_started",
+         "patterns": ["how to get started?", "how to start?", "run my first program?", "how can i used a test sample?", "samples to run" ],
+         "responses": ["Scramjet provides a simple walkthrough section for you to get started and run your first program under the get started section of SCP" ],
+         "context": [""]
+        },
+        {"tag": "api",
+         "patterns": ["where i can find info on api?", "what is the api of scramjet?", "api address?", "api information", "what is the base api address?"],
+         "responses": ["the base API is https://api.scramjet.cloud/api/v1/space/<SPACE-ID>/api/v1, more info at API section"],
+         "context": [""]
+        },
+        {"tag": "install",
+         "patterns": ["how can i install CLI", "cli installation", "can i use terminal to send request?", "command line interface", "easy way to send sequence" ],
+         "responses": ["use npm install -g @scramjet/cli commandline or go to CLI section in our documentation"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "person",
+         "patterns": ["who you are?", "to whom im talking?", "what is your name?", "what version you are?", "how old are you?"],
+         "responses": ["I'm Sam a member of Scramjet team, currently im the 5th Gene"],
+         "context": [""]
+        },
+        {"tag": "sdk",
+         "patterns": ["what is a sdk?", "what are the methods of sdk ?", "information on middleware", "what is the hostclient", "what is a sequenceclient", "information on managerclient", "what is an instanceclient methods?" ],
+         "responses": ["information on Software Development Kit is found under SDK documentation section. "],
+         "context": ["Software Development Kit"]
+        },
+        {"tag": "gpt",
+         "patterns": ["are you based on chat gpt", "are you smart as chat gpt ?", "are you connected to chat gpt ?"],
+         "responses": ["No, im a multi-class classification model unlike Chat-GPT"],
+         "context": ["chat_gpt"]
+        },
+        {"tag": "contact",
+         "patterns": ["how can i contact scramjet?", "whom i should contact for help?", "phone number to contact?", "email address", "how can i contact customer service", "my credit card is not working" ],
+         "responses": ["You can either call us during working hours or through email."],
+         "context": [""]
+        },
+	  {"tag": "samples",
+         "patterns": ["where to find examples ?", "where are the samples?", "are there some templates ?", "useful templates for js language", "samples for python", "examples on a sequence ?" ],
+         "responses": ["You can head to Examples sections for further illustration"],
+         "context": ["examples_templates_samples"]
+        }
+
+   ]
+}

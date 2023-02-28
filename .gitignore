@@ -1,0 +1,4 @@
+venv
+.idea
+classes.pkl
+words.pkl
